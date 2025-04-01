@@ -1,6 +1,7 @@
 // import Header from "@/components/header"
 
 import AboutSection from "@/components/frontend/about-section";
+import CtaV2 from "@/components/frontend/CtaV2";
 import Header from "@/components/frontend/header";
 import CustomCarousel from "@/components/frontend/hero-carousel";
 import { Button } from "@/components/ui/button";
@@ -310,123 +311,19 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section
-				id="contact"
-				className="w-full py-12 md:py-20 lg:py-22  bg-background"
-			>
-				<div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
-					<div className="space-y-2">
-						<div className="inline-block rounded-lg  bg-green-700 text-white px-3 py-1 text-sm text-center">
-							Contact Us
-						</div>
-						<h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-							Get in Touch
-						</h2>
-						<p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-							Ready to start your renewable energy journey? Contact us today for
-							a free consultation and quote.
-						</p>
-					</div>
-					<div className="flex flex-col gap-4 min-[400px]:flex-row lg:justify-end">
-						<Button asChild size="lg" className="group">
-							<Link href="tel:+1234567890">
-								Call Us
-								<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-							</Link>
-						</Button>
-						<Button asChild variant="outline" size="lg">
-							<Link href="mailto:info@kamharisenergy.com">Email Us</Link>
-						</Button>
-					</div>
-				</div>
-				<div className="container px-4 md:px-6 pt-12">
-					<div className="mx-auto max-w-5xl rounded-lg border bg-background p-8 shadow-sm">
-						<form className="grid gap-6 md:grid-cols-2">
-							<div className="grid gap-3">
-								<label
-									htmlFor="name"
-									className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-								>
-									Name
-								</label>
-								<input
-									id="name"
-									className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-									placeholder="Enter your name"
-									type="text"
-								/>
-							</div>
-							<div className="grid gap-3">
-								<label
-									htmlFor="email"
-									className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-								>
-									Email
-								</label>
-								<input
-									id="email"
-									className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-									placeholder="Enter your email"
-									type="email"
-								/>
-							</div>
-							<div className="grid gap-3">
-								<label
-									htmlFor="phone"
-									className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-								>
-									Phone
-								</label>
-								<input
-									id="phone"
-									className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-									placeholder="Enter your phone number"
-									type="tel"
-								/>
-							</div>
-							<div className="grid gap-3">
-								<label
-									htmlFor="service"
-									className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-								>
-									Service Interested In
-								</label>
-								<select
-									id="service"
-									className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-								>
-									<option value="">Select a service</option>
-									<option value="solar">Solar Energy</option>
-									<option value="wind">Wind Energy</option>
-									<option value="consulting">Energy Consulting</option>
-									<option value="other">Other</option>
-								</select>
-							</div>
-							<div className="grid gap-3 md:col-span-2">
-								<label
-									htmlFor="message"
-									className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-								>
-									Message
-								</label>
-								<textarea
-									id="message"
-									className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-									placeholder="Tell us about your project or inquiry"
-								></textarea>
-							</div>
-							<Button type="submit" size="lg" className="md:col-span-2">
-								Submit Inquiry
-							</Button>
-						</form>
-					</div>
-				</div>
-			</section>
+			<CtaV2 />
 			<footer className="w-full border-t bg-background py-6 md:py-12">
 				<div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row md:justify-between">
 					<div className="flex items-center gap-2">
-						<Wind className="h-6 w-6 text-primary" />
-						<span className="text-lg font-bold">Kamharis Energy</span>
+						<Link href="/" className="flex items-center">
+							<Image
+								src="/kamharis-logo.png"
+								alt="Company Logo"
+								width={612}
+								height={254}
+								className="h-14 w-auto"
+							/>
+						</Link>
 					</div>
 					<div className="flex flex-col items-center gap-2 md:flex-row md:gap-6">
 						<Link
