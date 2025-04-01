@@ -49,7 +49,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex items-center text-green-700 text-sm font-medium text-primary"
+									className="inline-flex items-center text-green-700 text-sm font-medium "
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -68,7 +68,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex items-center text-green-700 text-sm font-medium text-primary"
+									className="inline-flex items-center text-green-700 text-sm font-medium"
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -87,7 +87,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex text-green-700 items-center text-sm font-medium text-primary"
+									className="inline-flex text-green-700 items-center text-sm font-medium"
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -130,7 +130,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium"
 								>
 									View Case Study
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -176,7 +176,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium"
 								>
 									View Case Study
 									<ChevronRight className="ml-1 h-4 w-4" />
