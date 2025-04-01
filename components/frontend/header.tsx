@@ -26,7 +26,7 @@ export default function Header() {
 	const isActive = (path: string) => pathname === path;
 
 	return (
-		<header className="w-full border-b bg-gradient-to-r from-green-700 to-green-800 sticky  top-0 z-30 shadow-md">
+		<header className="w-full border-b bg-gradient-to-r from-green-700 to-green-800 fixed  top-0 z-30 shadow-md">
 			<div className="container px-2 py-2">
 				<div className="flex items-center justify-between">
 					{/* Logo */}

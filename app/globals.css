@@ -30,10 +30,8 @@ a {
 	}
 }
 
-
-
 @layer base {
-  :root {
+	:root {
 		--background: 0 0% 100%;
 		--foreground: 0 0% 3.9%;
 		--card: 0 0% 100%;
@@ -68,7 +66,7 @@ a {
 		--sidebar-border: 220 13% 91%;
 		--sidebar-ring: 217.2 91.2% 59.8%;
 	}
-  .dark {
+	.dark {
 		--background: 0 0% 3.9%;
 		--foreground: 0 0% 98%;
 		--card: 0 0% 3.9%;
@@ -104,13 +102,19 @@ a {
 	}
 }
 
-
-
 @layer base {
-  * {
-    @apply border-border;
+	* {
+		@apply border-border;
 	}
-  body {
-    @apply bg-background text-foreground;
+	body {
+		@apply bg-background text-foreground;
 	}
+}
+
+.bg-custom-pattern {
+	background-image: url("https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?uid=R177297642&ga=GA1.1.1785053804.1733249933&semt=ais_hybrid");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.1;
+	pointer-events: none;
 }

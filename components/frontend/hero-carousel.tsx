@@ -43,7 +43,7 @@ export default function CustomCarousel() {
 	}, []);
 
 	return (
-		<div className="relative w-full min-h-screen bg-purple-900  overflow-hidden">
+		<div className="relative w-full h-[70vh] bg-purple-900  overflow-hidden">
 			<div className="absolute inset-0">
 				{carouselItems.map((item, index) => (
 					<div
@@ -61,7 +61,7 @@ export default function CustomCarousel() {
 					</div>
 				))}
 			</div>
-			<div className="absolute inset-x-0 bottom-[20%] top-0 flex flex-col items-center justify-end p-6 text-white">
+			<div className="absolute inset-x-0 top-[50%] -translate-y-1/2 flex flex-col items-center justify-end p-6 text-white">
 				<h2 className="text-3xl max-w-96 text-center font-bold mb-2">
 					{carouselItems[currentSlide].title}
 				</h2>
@@ -86,14 +86,14 @@ export default function CustomCarousel() {
 
 			<button
 				onClick={prevSlide}
-				className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/75 hover:text-white transition-colors "
+				className="absolute -left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/75 hover:text-white transition-colors "
 				aria-label="Previous slide"
 			>
 				<ChevronLeft className="w-8 h-8" />
 			</button>
 			<button
 				onClick={nextSlide}
-				className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/75 hover:text-white transition-colors"
+				className="absolute -right-2 sm:right-4  top-1/2 transform -translate-y-1/2 text-white/75 hover:text-white transition-colors"
 				aria-label="Next slide"
 			>
 				<ChevronRight className="w-8 h-8" />
