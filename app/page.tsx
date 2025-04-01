@@ -24,7 +24,7 @@ export default function Home() {
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
-							<div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+							<div className="inline-block rounded-lg px-3 py-1 text-sm text-primary-foreground  bg-green-700 text-white">
 								Our Services
 							</div>
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -40,7 +40,7 @@ export default function Home() {
 						<div className="group relative overflow-hidden rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-lg">
 							<div className="flex flex-col items-center space-y-4">
 								<div className="rounded-full bg-primary/10 p-3">
-									<Lightbulb className="h-6 w-6 text-primary" />
+									<Lightbulb className="h-6 w-6 text-green-700" />
 								</div>
 								<h3 className="text-xl font-bold">Solar Energy</h3>
 								<p className="text-center text-muted-foreground">
@@ -49,7 +49,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex items-center text-sm font-medium text-primary"
+									className="inline-flex items-center text-green-700 text-sm font-medium text-primary"
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -59,7 +59,7 @@ export default function Home() {
 						<div className="group relative overflow-hidden rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-lg">
 							<div className="flex flex-col items-center space-y-4">
 								<div className="rounded-full bg-primary/10 p-3">
-									<Wind className="h-6 w-6 text-primary" />
+									<Wind className="h-6 w-6 text-green-700" />
 								</div>
 								<h3 className="text-xl font-bold">Wind Energy</h3>
 								<p className="text-center text-muted-foreground">
@@ -68,7 +68,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex items-center text-sm font-medium text-primary"
+									className="inline-flex items-center text-green-700 text-sm font-medium text-primary"
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -78,7 +78,7 @@ export default function Home() {
 						<div className="group relative overflow-hidden rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-lg">
 							<div className="flex flex-col items-center space-y-4">
 								<div className="rounded-full bg-primary/10 p-3">
-									<Globe className="h-6 w-6 text-primary" />
+									<Globe className="h-6 w-6 text-green-700" />
 								</div>
 								<h3 className="text-xl font-bold">Energy Consulting</h3>
 								<p className="text-center text-muted-foreground">
@@ -87,7 +87,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="inline-flex items-center text-sm font-medium text-primary"
+									className="inline-flex text-green-700 items-center text-sm font-medium text-primary"
 								>
 									Learn More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -101,7 +101,7 @@ export default function Home() {
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
-							<div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+							<div className="inline-block rounded-lg  px-3 py-1 text-sm  bg-green-700 text-white">
 								Our Projects
 							</div>
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -130,7 +130,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium text-primary"
 								>
 									View Case Study
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -153,7 +153,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium "
 								>
 									View Case Study
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -176,7 +176,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex text-green-700 items-center text-sm font-medium text-primary"
 								>
 									View Case Study
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -185,7 +185,12 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="flex justify-center">
-						<Button asChild variant="outline" size="lg">
+						<Button
+							asChild
+							variant="outline"
+							size="lg"
+							className="bg-green-700 hover:bg-green-800 text-white hover:text-white"
+						>
 							<Link href="#">View All Projects</Link>
 						</Button>
 					</div>
@@ -195,7 +200,7 @@ export default function Home() {
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
-							<div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+							<div className="inline-block rounded-lg px-3 py-1 text-sm  bg-green-700 text-white">
 								Our Blog
 							</div>
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -229,7 +234,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex items-center text-sm font-medium text-green-700"
 								>
 									Read More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -257,7 +262,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex items-center text-sm font-medium text-green-700"
 								>
 									Read More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -285,7 +290,7 @@ export default function Home() {
 								</p>
 								<Link
 									href="#"
-									className="mt-4 inline-flex items-center text-sm font-medium text-primary"
+									className="mt-4 inline-flex items-center text-sm font-medium text-green-700"
 								>
 									Read More
 									<ChevronRight className="ml-1 h-4 w-4" />
@@ -295,7 +300,12 @@ export default function Home() {
 					</div>
 					<div className="flex justify-center">
 						<Button asChild variant="outline" size="lg">
-							<Link href="#">View All Articles</Link>
+							<Link
+								href="#"
+								className="bg-green-700 hover:bg-green-800 text-white hover:text-white"
+							>
+								View All Articles
+							</Link>
 						</Button>
 					</div>
 				</div>
@@ -306,7 +316,7 @@ export default function Home() {
 			>
 				<div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
 					<div className="space-y-2">
-						<div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+						<div className="inline-block rounded-lg  bg-green-700 text-white px-3 py-1 text-sm text-center">
 							Contact Us
 						</div>
 						<h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
